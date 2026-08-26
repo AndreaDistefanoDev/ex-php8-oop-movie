@@ -11,6 +11,10 @@ class Movie
     public $rating;
     protected Genre $genre;
 
+
+    // Usiamo il Trait HasDirector per aggiungere le funzionalità relative al regista
+    use HasDirector;
+
     // Assegnazione dei valori alle proprietà della Classe Movie tramite il costruttore 
     public function __construct($_title, $_year, $_description, $_rating, Genre $_genre)
     {
