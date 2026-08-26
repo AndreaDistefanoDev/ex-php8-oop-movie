@@ -21,4 +21,10 @@ class Genre
 
         return $this->name;
     }
+
+    // Creiamo un metodo per ottenere la descrizione del genere
+    public function getDescription()
+    {
+        return $this->description;
+    }
 }
